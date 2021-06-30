@@ -1,80 +1,87 @@
 footer{
-  height: 500px;
-  background-image: url(../assets/img/footer-bg.jpg);
-  background-size: cover;
-}
-@import '../assets/style/vars.scss';
-.footer-top{
-  height: 450px;
-}
-.list{
-  display: flex;
-  width: 50%;
-  padding: 3rem 1rem;
-    a,
-  div{
-    flex-basis: calc(100% / 3);
-    text-transform: capitalize;
-  }
-  h5{
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-    padding-top: 1rem;
-    color: white;
-  }
-    a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 0.85rem;
-    margin-bottom: 0.2rem;
-    color: rgb(135, 135, 135);
-  }
-}
-.footert-logo{
-  width: 50%;
-  display: flex;
-  background-image: url(../assets/img/dc-logo-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.footer-bottom{
-  padding: 50px 0;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  background-color: rgb(48, 48, 48);
-}
-.footer-button{
-  width: 50%;
-  button{
-    background-color: rgb(48, 48, 48);
-    border: 3px solid $blue-dc;
-    padding: 15px;
-          a{
-        color: white;
-        text-transform: uppercase;
-        font-weight: bold;
+    .commercial{
+        padding: 50px 1rem;
+        background-color: $brand-blue;
+        .wrap{
+            justify-content: space-around;
+            div{
+                padding-right: 1rem;
+                transition: transform 0.4s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                &:last-child img{
+                    width: 60px;
+                }
+                a{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                  img{
+                      height: 60px;
+                      margin-right: 1rem;
+                  }
+                }
+            }
         }
     }
-}
-.socials{
-  width: 50%;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  ul{
-    list-style: none;
-    li{
-      padding: 5px;
-      display: inline;
+    .footer-top{
+        height: 370px;
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;
+        overflow: hidden;
+        .wrap{
+            height: 100%;
+            background-image: url('../img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            .menu-footer{
+                display: flex;
+                div{
+                    padding-right: 2rem;
+                }
+                }
+                h3{
+                color:#fff;
+                margin: 1rem 0;
+                }
+                a{
+                display: inline-block;
+                color: rgba(#fff, .4);
+                font-size: 13px;
+                margin-bottom: 0.50rem;
+                &:hover{
+                    color: #fff;
+                 }
+                }
+        }
     }
-  }
-}
-.socials h5{
-  padding-right: 15px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: $blue-dc;
+    .footer-bot{
+        padding: 30px 0;
+        background-color: #303030;
+        button{
+            background: none;
+            padding: 0.75rem;
+            border: 2px solid $brand-blue;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(#fff, 0.2);
+            }
+            
+        }
+        div{
+            display: flex;
+            align-items: center;
+            h2{
+                color: $brand-blue;
+            }
+            img{
+                margin-left: 1rem;
+            }
+        }
+    }
 }

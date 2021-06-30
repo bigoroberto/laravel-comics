@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header .wrap img {
+  height: 80px;
+}
+header .wrap ul {
+  display: flex;
+}
+header .wrap ul li a {
+  display: inline-block;
+  margin-left: 2rem;
+  padding: 35px 0;
+  color: #4B4D50;
+  font-size: 12px;
+  font-weight: 600;
+}
+header .wrap ul li a:hover, header .wrap ul li a.active {
+  border-bottom: 4px solid #0282F9;
+  color: #0282F9;
+}
+header ._jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  padding: 50px 0;
+  background-color: #1c1c1c;
+}
+main .wrap {
+  flex-wrap: wrap;
+  position: relative;
+}
+main .wrap h1 {
+  color: #fff;
+  position: absolute;
+  top: -9%;
+  left: -1%;
+  transform: translateY(-50%);
+  font-size: 23px;
+  padding: 0.5rem 1.25rem;
+  background-color: #0282F9;
+}
+
+.card {
+  height: 270px;
+  flex-basis: calc(100% / 6 - 19px);
+  transition: transform 0.5s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .image {
+  display: inline-block;
+  height: 200px;
+  overflow: hidden;
+}
+.card h2 {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.load {
+  text-align: center;
+}
+.load button {
+  padding: 0.5rem 4rem;
+  border: none;
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  background-color: #0282F9;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .commercial {
+  padding: 50px 1rem;
+  background-color: #0282F9;
+}
+footer .commercial .wrap {
+  justify-content: space-around;
+}
+footer .commercial .wrap div {
+  padding-right: 1rem;
+  transition: transform 0.4s;
+}
+footer .commercial .wrap div:hover {
+  transform: scale(1.1);
+}
+footer .commercial .wrap div:last-child img {
+  width: 60px;
+}
+footer .commercial .wrap div a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+footer .commercial .wrap div a img {
+  height: 60px;
+  margin-right: 1rem;
+}
+footer .footer-top {
+  height: 370px;
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+footer .footer-top .wrap {
+  height: 100%;
+  background-image: url("../img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+footer .footer-top .wrap .menu-footer {
+  display: flex;
+}
+footer .footer-top .wrap .menu-footer div {
+  padding-right: 2rem;
+}
+footer .footer-top .wrap h3 {
+  color: #fff;
+  margin: 1rem 0;
+}
+footer .footer-top .wrap a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+  margin-bottom: 0.5rem;
+}
+footer .footer-top .wrap a:hover {
+  color: #fff;
+}
+footer .footer-bot {
+  padding: 30px 0;
+  background-color: #303030;
+}
+footer .footer-bot button {
+  background: none;
+  padding: 0.75rem;
+  border: 2px solid #0282F9;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+footer .footer-bot button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+footer .footer-bot div {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bot div h2 {
+  color: #0282F9;
+}
+footer .footer-bot div img {
+  margin-left: 1rem;
+}

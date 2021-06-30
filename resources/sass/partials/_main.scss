@@ -1,0 +1,51 @@
+main{
+    padding: 50px 0;
+    background-color: #1c1c1c;
+    .wrap{
+        flex-wrap: wrap;
+        position: relative;
+        h1{
+            color: #fff;
+            position: absolute;
+            top: -9%;
+            left: -1%;
+            transform: translateY(-50%);
+            font-size: 23px;
+            padding: 0.5rem 1.25rem;
+            background-color: $brand-blue;
+        }
+    }   
+}
+.card{
+    height: 270px;
+    flex-basis: calc(100% / 6 - 19px);
+    transition: transform .5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    .image{
+        display: inline-block;
+        height: 200px;
+        overflow: hidden;  
+    }
+    h2{
+        color: #fff;
+        font-size: 14px;
+        margin-top: 10px;
+        cursor: pointer;   
+    }
+}
+.load{
+    text-align: center;
+    button{  
+         padding: 0.5rem 4rem;
+         border: none;
+         margin-top: 50px;
+         font-size: 14px;
+         font-weight: 600;
+         font-family: 'Roboto', sans-serif;
+         background-color: $brand-blue;
+         color: #fff;
+         cursor: pointer;
+    }
+}
